@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1815ED71FBD7E8D00C1C328 /* GN_Data.m in Sources */ = {isa = PBXBuildFile; fileRef = E1815EBC1FBD7E8C00C1C328 /* GN_Data.m */; };
+		E1815ED81FBD7E8D00C1C328 /* GN_ipaPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E1815EBE1FBD7E8C00C1C328 /* GN_ipaPath.m */; };
+		E1815ED91FBD7E8D00C1C328 /* GN_mobileprovision_path.m in Sources */ = {isa = PBXBuildFile; fileRef = E1815EC01FBD7E8C00C1C328 /* GN_mobileprovision_path.m */; };
+		E1815EDA1FBD7E8D00C1C328 /* GN_p12_Path.m in Sources */ = {isa = PBXBuildFile; fileRef = E1815EC21FBD7E8C00C1C328 /* GN_p12_Path.m */; };
+		E1815EDB1FBD7E8D00C1C328 /* gn_development.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1815EC61FBD7E8C00C1C328 /* gn_development.plist */; };
+		E1815EDC1FBD7E8D00C1C328 /* gn_manualRegisnDev.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815EC71FBD7E8C00C1C328 /* gn_manualRegisnDev.sh */; };
+		E1815EDD1FBD7E8D00C1C328 /* gn_resignDev.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815EC81FBD7E8C00C1C328 /* gn_resignDev.sh */; };
+		E1815EDE1FBD7E8D00C1C328 /* gn_deleteMobileProvision.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815ECA1FBD7E8C00C1C328 /* gn_deleteMobileProvision.sh */; };
+		E1815EDF1FBD7E8D00C1C328 /* gn_executeInTerminal.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815ECB1FBD7E8C00C1C328 /* gn_executeInTerminal.sh */; };
+		E1815EE01FBD7E8D00C1C328 /* gn_importMobileProvision.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815ECC1FBD7E8C00C1C328 /* gn_importMobileProvision.sh */; };
+		E1815EE11FBD7E8D00C1C328 /* gn_importP12.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815ECD1FBD7E8C00C1C328 /* gn_importP12.sh */; };
+		E1815EE21FBD7E8D00C1C328 /* gn_viewInfoPlist.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815ECE1FBD7E8C00C1C328 /* gn_viewInfoPlist.sh */; };
+		E1815EE31FBD7E8D00C1C328 /* gn_entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1815ED01FBD7E8C00C1C328 /* gn_entitlements.plist */; };
+		E1815EE41FBD7E8D00C1C328 /* gn_resignEnterprise.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815ED11FBD7E8C00C1C328 /* gn_resignEnterprise.sh */; };
+		E1815EE51FBD7E8D00C1C328 /* gn_resourceRules.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1815ED21FBD7E8C00C1C328 /* gn_resourceRules.plist */; };
+		E1815EE61FBD7E8D00C1C328 /* GN_HelloworldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1815ED51FBD7E8D00C1C328 /* GN_HelloworldViewController.m */; };
+		E1815EE71FBD7E8D00C1C328 /* GN_HelloworldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1815ED61FBD7E8D00C1C328 /* GN_HelloworldViewController.xib */; };
+		E1815EE91FBD8CE700C1C328 /* gn_tmpShell.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815EE81FBD8CE700C1C328 /* gn_tmpShell.sh */; };
+		E19C44171D5C34600029C01F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C44161D5C34600029C01F /* AppDelegate.m */; };
+		E19C441A1D5C34600029C01F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C44191D5C34600029C01F /* main.m */; };
+		E19C441C1D5C34600029C01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19C441B1D5C34600029C01F /* Assets.xcassets */; };
+		E19C441F1D5C34600029C01F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19C441D1D5C34600029C01F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E1815EBB1FBD7E8C00C1C328 /* GN_Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_Data.h; sourceTree = "<group>"; };
+		E1815EBC1FBD7E8C00C1C328 /* GN_Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_Data.m; sourceTree = "<group>"; };
+		E1815EBD1FBD7E8C00C1C328 /* GN_ipaPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_ipaPath.h; sourceTree = "<group>"; };
+		E1815EBE1FBD7E8C00C1C328 /* GN_ipaPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_ipaPath.m; sourceTree = "<group>"; };
+		E1815EBF1FBD7E8C00C1C328 /* GN_mobileprovision_path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_mobileprovision_path.h; sourceTree = "<group>"; };
+		E1815EC01FBD7E8C00C1C328 /* GN_mobileprovision_path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_mobileprovision_path.m; sourceTree = "<group>"; };
+		E1815EC11FBD7E8C00C1C328 /* GN_p12_Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_p12_Path.h; sourceTree = "<group>"; };
+		E1815EC21FBD7E8C00C1C328 /* GN_p12_Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_p12_Path.m; sourceTree = "<group>"; };
+		E1815EC61FBD7E8C00C1C328 /* gn_development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gn_development.plist; sourceTree = "<group>"; };
+		E1815EC71FBD7E8C00C1C328 /* gn_manualRegisnDev.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_manualRegisnDev.sh; sourceTree = "<group>"; };
+		E1815EC81FBD7E8C00C1C328 /* gn_resignDev.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_resignDev.sh; sourceTree = "<group>"; };
+		E1815ECA1FBD7E8C00C1C328 /* gn_deleteMobileProvision.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_deleteMobileProvision.sh; sourceTree = "<group>"; };
+		E1815ECB1FBD7E8C00C1C328 /* gn_executeInTerminal.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_executeInTerminal.sh; sourceTree = "<group>"; };
+		E1815ECC1FBD7E8C00C1C328 /* gn_importMobileProvision.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_importMobileProvision.sh; sourceTree = "<group>"; };
+		E1815ECD1FBD7E8C00C1C328 /* gn_importP12.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_importP12.sh; sourceTree = "<group>"; };
+		E1815ECE1FBD7E8C00C1C328 /* gn_viewInfoPlist.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_viewInfoPlist.sh; sourceTree = "<group>"; };
+		E1815ED01FBD7E8C00C1C328 /* gn_entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gn_entitlements.plist; sourceTree = "<group>"; };
+		E1815ED11FBD7E8C00C1C328 /* gn_resignEnterprise.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_resignEnterprise.sh; sourceTree = "<group>"; };
+		E1815ED21FBD7E8C00C1C328 /* gn_resourceRules.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = gn_resourceRules.plist; sourceTree = "<group>"; };
+		E1815ED41FBD7E8D00C1C328 /* GN_HelloworldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_HelloworldViewController.h; sourceTree = "<group>"; };
+		E1815ED51FBD7E8D00C1C328 /* GN_HelloworldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_HelloworldViewController.m; sourceTree = "<group>"; };
+		E1815ED61FBD7E8D00C1C328 /* GN_HelloworldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GN_HelloworldViewController.xib; sourceTree = "<group>"; };
+		E1815EE81FBD8CE700C1C328 /* gn_tmpShell.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_tmpShell.sh; sourceTree = "<group>"; };
+		E19C44121D5C34600029C01F /* GNReisign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNReisign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19C44151D5C34600029C01F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E19C44161D5C34600029C01F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E19C44191D5C34600029C01F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E19C441B1D5C34600029C01F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E19C441E1D5C34600029C01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E19C44201D5C34600029C01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E19C440F1D5C34600029C01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1815EB91FBD7E8C00C1C328 /* GN_Code */ = {
+			isa = PBXGroup;
+			children = (
+				E1815EBA1FBD7E8C00C1C328 /* GN_Data */,
+				E1815EC31FBD7E8C00C1C328 /* GN_Shell */,
+				E1815ED31FBD7E8C00C1C328 /* GN_UI */,
+			);
+			path = GN_Code;
+			sourceTree = "<group>";
+		};
+		E1815EBA1FBD7E8C00C1C328 /* GN_Data */ = {
+			isa = PBXGroup;
+			children = (
+				E1815EBB1FBD7E8C00C1C328 /* GN_Data.h */,
+				E1815EBC1FBD7E8C00C1C328 /* GN_Data.m */,
+				E1815EBD1FBD7E8C00C1C328 /* GN_ipaPath.h */,
+				E1815EBE1FBD7E8C00C1C328 /* GN_ipaPath.m */,
+				E1815EBF1FBD7E8C00C1C328 /* GN_mobileprovision_path.h */,
+				E1815EC01FBD7E8C00C1C328 /* GN_mobileprovision_path.m */,
+				E1815EC11FBD7E8C00C1C328 /* GN_p12_Path.h */,
+				E1815EC21FBD7E8C00C1C328 /* GN_p12_Path.m */,
+			);
+			path = GN_Data;
+			sourceTree = "<group>";
+		};
+		E1815EC31FBD7E8C00C1C328 /* GN_Shell */ = {
+			isa = PBXGroup;
+			children = (
+				E1815EC51FBD7E8C00C1C328 /* GN_Dev */,
+				E1815EC91FBD7E8C00C1C328 /* GN_Function */,
+				E1815ECF1FBD7E8C00C1C328 /* GN_InHouse */,
+			);
+			path = GN_Shell;
+			sourceTree = "<group>";
+		};
+		E1815EC51FBD7E8C00C1C328 /* GN_Dev */ = {
+			isa = PBXGroup;
+			children = (
+				E1815EC61FBD7E8C00C1C328 /* gn_development.plist */,
+				E1815EC71FBD7E8C00C1C328 /* gn_manualRegisnDev.sh */,
+				E1815EC81FBD7E8C00C1C328 /* gn_resignDev.sh */,
+			);
+			path = GN_Dev;
+			sourceTree = "<group>";
+		};
+		E1815EC91FBD7E8C00C1C328 /* GN_Function */ = {
+			isa = PBXGroup;
+			children = (
+				E1815EE81FBD8CE700C1C328 /* gn_tmpShell.sh */,
+				E1815ECA1FBD7E8C00C1C328 /* gn_deleteMobileProvision.sh */,
+				E1815ECB1FBD7E8C00C1C328 /* gn_executeInTerminal.sh */,
+				E1815ECC1FBD7E8C00C1C328 /* gn_importMobileProvision.sh */,
+				E1815ECD1FBD7E8C00C1C328 /* gn_importP12.sh */,
+				E1815ECE1FBD7E8C00C1C328 /* gn_viewInfoPlist.sh */,
+			);
+			path = GN_Function;
+			sourceTree = "<group>";
+		};
+		E1815ECF1FBD7E8C00C1C328 /* GN_InHouse */ = {
+			isa = PBXGroup;
+			children = (
+				E1815ED01FBD7E8C00C1C328 /* gn_entitlements.plist */,
+				E1815ED11FBD7E8C00C1C328 /* gn_resignEnterprise.sh */,
+				E1815ED21FBD7E8C00C1C328 /* gn_resourceRules.plist */,
+			);
+			path = GN_InHouse;
+			sourceTree = "<group>";
+		};
+		E1815ED31FBD7E8C00C1C328 /* GN_UI */ = {
+			isa = PBXGroup;
+			children = (
+				E1815ED41FBD7E8D00C1C328 /* GN_HelloworldViewController.h */,
+				E1815ED51FBD7E8D00C1C328 /* GN_HelloworldViewController.m */,
+				E1815ED61FBD7E8D00C1C328 /* GN_HelloworldViewController.xib */,
+			);
+			path = GN_UI;
+			sourceTree = "<group>";
+		};
+		E19C44091D5C34600029C01F = {
+			isa = PBXGroup;
+			children = (
+				E19C44141D5C34600029C01F /* GN_ResignTool */,
+				E19C44131D5C34600029C01F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E19C44131D5C34600029C01F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E19C44121D5C34600029C01F /* GNReisign.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E19C44141D5C34600029C01F /* GN_ResignTool */ = {
+			isa = PBXGroup;
+			children = (
+				E1815EB91FBD7E8C00C1C328 /* GN_Code */,
+				E19C44151D5C34600029C01F /* AppDelegate.h */,
+				E19C44161D5C34600029C01F /* AppDelegate.m */,
+				E19C441B1D5C34600029C01F /* Assets.xcassets */,
+				E19C441D1D5C34600029C01F /* MainMenu.xib */,
+				E19C44201D5C34600029C01F /* Info.plist */,
+				E19C44181D5C34600029C01F /* Supporting Files */,
+			);
+			path = GN_ResignTool;
+			sourceTree = "<group>";
+		};
+		E19C44181D5C34600029C01F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E19C44191D5C34600029C01F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E19C44111D5C34600029C01F /* GNReisign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E19C44231D5C34600029C01F /* Build configuration list for PBXNativeTarget "GNReisign" */;
+			buildPhases = (
+				E19C440E1D5C34600029C01F /* Sources */,
+				E19C440F1D5C34600029C01F /* Frameworks */,
+				E19C44101D5C34600029C01F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNReisign;
+			productName = GN_ResignTool;
+			productReference = E19C44121D5C34600029C01F /* GNReisign.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E19C440A1D5C34600029C01F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = lolo2513;
+				TargetAttributes = {
+					E19C44111D5C34600029C01F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E19C440D1D5C34600029C01F /* Build configuration list for PBXProject "GN_ResignTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E19C44091D5C34600029C01F;
+			productRefGroup = E19C44131D5C34600029C01F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E19C44111D5C34600029C01F /* GNReisign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E19C44101D5C34600029C01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19C441C1D5C34600029C01F /* Assets.xcassets in Resources */,
+				E1815EDB1FBD7E8D00C1C328 /* gn_development.plist in Resources */,
+				E1815EE11FBD7E8D00C1C328 /* gn_importP12.sh in Resources */,
+				E1815EDD1FBD7E8D00C1C328 /* gn_resignDev.sh in Resources */,
+				E19C441F1D5C34600029C01F /* MainMenu.xib in Resources */,
+				E1815EE21FBD7E8D00C1C328 /* gn_viewInfoPlist.sh in Resources */,
+				E1815EE91FBD8CE700C1C328 /* gn_tmpShell.sh in Resources */,
+				E1815EE01FBD7E8D00C1C328 /* gn_importMobileProvision.sh in Resources */,
+				E1815EE31FBD7E8D00C1C328 /* gn_entitlements.plist in Resources */,
+				E1815EE41FBD7E8D00C1C328 /* gn_resignEnterprise.sh in Resources */,
+				E1815EDE1FBD7E8D00C1C328 /* gn_deleteMobileProvision.sh in Resources */,
+				E1815EDC1FBD7E8D00C1C328 /* gn_manualRegisnDev.sh in Resources */,
+				E1815EE71FBD7E8D00C1C328 /* GN_HelloworldViewController.xib in Resources */,
+				E1815EE51FBD7E8D00C1C328 /* gn_resourceRules.plist in Resources */,
+				E1815EDF1FBD7E8D00C1C328 /* gn_executeInTerminal.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E19C440E1D5C34600029C01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19C441A1D5C34600029C01F /* main.m in Sources */,
+				E19C44171D5C34600029C01F /* AppDelegate.m in Sources */,
+				E1815ED81FBD7E8D00C1C328 /* GN_ipaPath.m in Sources */,
+				E1815EDA1FBD7E8D00C1C328 /* GN_p12_Path.m in Sources */,
+				E1815ED71FBD7E8D00C1C328 /* GN_Data.m in Sources */,
+				E1815ED91FBD7E8D00C1C328 /* GN_mobileprovision_path.m in Sources */,
+				E1815EE61FBD7E8D00C1C328 /* GN_HelloworldViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E19C441D1D5C34600029C01F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19C441E1D5C34600029C01F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E19C44211D5C34600029C01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E19C44221D5C34600029C01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E19C44241D5C34600029C01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GN_ResignTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = lolo2513.GN.ResignTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E19C44251D5C34600029C01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GN_ResignTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = lolo2513.GN.ResignTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E19C440D1D5C34600029C01F /* Build configuration list for PBXProject "GN_ResignTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19C44211D5C34600029C01F /* Debug */,
+				E19C44221D5C34600029C01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E19C44231D5C34600029C01F /* Build configuration list for PBXNativeTarget "GNReisign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19C44241D5C34600029C01F /* Debug */,
+				E19C44251D5C34600029C01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E19C440A1D5C34600029C01F /* Project object */;
+}

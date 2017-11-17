@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15G1217" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GN_HelloworldViewController">
+            <connections>
+                <outlet property="bundleId" destination="jQN-go-zFH" id="Jwa-sf-Lrs"/>
+                <outlet property="controlLogs" destination="vLb-GH-hiG" id="Hvk-ic-izY"/>
+                <outlet property="ipaPath" destination="DzM-Op-3hu" id="Nj3-Xd-xtu"/>
+                <outlet property="mobileProvisionPath" destination="obT-54-fmh" id="sPH-ly-xu7"/>
+                <outlet property="p12Name" destination="nTV-Fh-3ov" id="QIq-in-NlJ"/>
+                <outlet property="p12Password" destination="VB5-bu-MyL" id="MCR-aI-bDx"/>
+                <outlet property="p12Path" destination="WYe-fR-nXS" id="PCV-GD-xhc"/>
+                <outlet property="teamId" destination="KO6-cK-zIw" id="nym-3M-XRl"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="712" height="556"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2h-en-7XN">
+                    <rect key="frame" x="32" y="473" width="139" height="35"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Drag ipa/zip into" id="Vfx-Y7-R5g">
+                        <font key="font" size="16" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-4y-l9j">
+                    <rect key="frame" x="10" y="455" width="179" height="84"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="vNC-mz-Q7V"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DzM-Op-3hu">
+                    <rect key="frame" x="198" y="458" width="224" height="78"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="jgu-Sn-ril">
+                        <font key="font" size="12" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obT-54-fmh">
+                    <rect key="frame" x="467" y="287" width="224" height="64"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="RcE-4J-XRL">
+                        <font key="font" size="12" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-Pz-8wc" userLabel="请拖入p12">
+                    <rect key="frame" x="38" y="386" width="123" height="33"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="p12 certificate" id="Tcw-3X-8aL">
+                        <font key="font" size="16" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPj-7c-mdL">
+                    <rect key="frame" x="10" y="367" width="179" height="83"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="bMd-Zd-SbT"/>
+                </imageView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="853-Gi-WCR" customClass="GN_Get_p12_Path">
+                    <rect key="frame" x="18" y="370" width="163" height="80"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1r-U8-rfu" userLabel="请拖入授权文件">
+                    <rect key="frame" x="38" y="298" width="123" height="33"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="mobileprovision" id="69l-hA-uOb">
+                        <font key="font" size="16" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-1n-Ash">
+                    <rect key="frame" x="10" y="281" width="179" height="81"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="VtP-ec-fJs"/>
+                </imageView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-6C-Y6o" userLabel="Get mobileprovision Path" customClass="GN_mobileprovision_path">
+                    <rect key="frame" x="18" y="284" width="163" height="78"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMo-l6-mqu">
+                    <rect key="frame" x="193" y="400" width="69" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="p12_Pswd" id="A7g-Vo-xal">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VB5-bu-MyL">
+                    <rect key="frame" x="263" y="400" width="429" height="23"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" title="1234" placeholderString="请输入p12证书密码" drawsBackground="YES" id="jVa-Bo-HiE">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-bH-vlx">
+                    <rect key="frame" x="192" y="427" width="80" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="p12_Name：" id="aI3-TN-uDl">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-Fh-3ov">
+                    <rect key="frame" x="263" y="428" width="429" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="r4w-Ks-WiU">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYe-fR-nXS">
+                    <rect key="frame" x="198" y="367" width="493" height="31"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="x2n-nP-QRp">
+                        <font key="font" size="12" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-UN-Ki0">
+                    <rect key="frame" x="293" y="249" width="108" height="24"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Logs" id="dsp-kc-Yil">
+                        <font key="font" size="17" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYE-M4-fml">
+                    <rect key="frame" x="13" y="9" width="681" height="236"/>
+                    <clipView key="contentView" ambiguous="YES" id="T0V-bu-0uU">
+                        <rect key="frame" x="1" y="1" width="664" height="234"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="vLb-GH-hiG">
+                                <rect key="frame" x="0.0" y="0.0" width="664" height="234"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="664" height="234"/>
+                                <size key="maxSize" width="681" height="10000000"/>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="664" height="234"/>
+                                <size key="maxSize" width="681" height="10000000"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="ZaN-bv-Tgv">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="hoh-f2-6je">
+                        <rect key="frame" x="665" y="1" width="15" height="234"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUd-Df-tUN">
+                    <rect key="frame" x="639" y="251" width="55" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="clear" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="O4a-GS-6Ms">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <connections>
+                            <action selector="clearLogs:" target="-2" id="3dO-nh-HFu"/>
+                        </connections>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIq-u2-sAl">
+                    <rect key="frame" x="193" y="329" width="69" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="teamId：" id="2bE-nG-R3z">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO6-cK-zIw">
+                    <rect key="frame" x="253" y="330" width="208" height="23"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="input teamId or drag mb into" drawsBackground="YES" id="eRN-Za-Vop">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qcg-dg-0Bj">
+                    <rect key="frame" x="192" y="298" width="70" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="bundleId：" id="cJJ-nS-bJk">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQN-go-zFH">
+                    <rect key="frame" x="253" y="298" width="208" height="23"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="input bundleId or drag mb into" drawsBackground="YES" id="iFJ-9X-EyR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBH-0L-njZ">
+                    <rect key="frame" x="446" y="501" width="104" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="inHouseResign" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="edE-sO-waG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <connections>
+                            <action selector="enterpriseIpa:" target="-2" id="xwc-Z0-ToI"/>
+                        </connections>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJe-Xz-BbU">
+                    <rect key="frame" x="571" y="471" width="121" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="manualDevResign" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7V3-Qr-5tF">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="manualReignDev:" target="-2" id="Mpx-6U-Hnc"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0v-eV-SWW">
+                    <rect key="frame" x="571" y="501" width="121" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="view info.plist" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PQE-5m-Wtj">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="viewInfoPlist:" target="-2" id="Vth-R5-Umd"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-Aq-nuT">
+                    <rect key="frame" x="446" y="471" width="104" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="devResign" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CMm-1f-OP7">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="devIpa:" target="-2" id="afg-BW-QcK"/>
+                    </connections>
+                </button>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-Ik-hyG" customClass="GN_Get_ipa_Path">
+                    <rect key="frame" x="18" y="455" width="163" height="81"/>
+                </customView>
+            </subviews>
+            <point key="canvasLocation" x="271" y="334"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="gwo-Hn-jmg"/>
+    </objects>
+</document>
