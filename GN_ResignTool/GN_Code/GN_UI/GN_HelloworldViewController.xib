@@ -210,7 +210,7 @@
                     </buttonCell>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJe-Xz-BbU">
-                    <rect key="frame" x="571" y="471" width="121" height="25"/>
+                    <rect key="frame" x="571" y="491" width="121" height="25"/>
                     <buttonCell key="cell" type="roundTextured" title="manualDevResign" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7V3-Qr-5tF">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -220,7 +220,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0v-eV-SWW">
-                    <rect key="frame" x="571" y="501" width="121" height="25"/>
+                    <rect key="frame" x="571" y="522" width="121" height="25"/>
                     <buttonCell key="cell" type="roundTextured" title="view info.plist" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PQE-5m-Wtj">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -242,6 +242,16 @@
                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-Ik-hyG" customClass="GN_Get_ipa_Path">
                     <rect key="frame" x="18" y="455" width="163" height="81"/>
                 </customView>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-3M-7xW">
+                    <rect key="frame" x="571" y="461" width="118" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="manualDisResign" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bn4-hP-Ebp">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="manualReignDis:" target="-2" id="Ig4-1O-ioR"/>
+                    </connections>
+                </button>
             </subviews>
             <point key="canvasLocation" x="271" y="334"/>
         </customView>

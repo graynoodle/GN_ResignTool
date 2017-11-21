@@ -25,6 +25,9 @@
 		E1815EE61FBD7E8D00C1C328 /* GN_HelloworldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1815ED51FBD7E8D00C1C328 /* GN_HelloworldViewController.m */; };
 		E1815EE71FBD7E8D00C1C328 /* GN_HelloworldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1815ED61FBD7E8D00C1C328 /* GN_HelloworldViewController.xib */; };
 		E1815EE91FBD8CE700C1C328 /* gn_tmpShell.sh in Resources */ = {isa = PBXBuildFile; fileRef = E1815EE81FBD8CE700C1C328 /* gn_tmpShell.sh */; };
+		E18488D11FC2821600377A5E /* gn_distribution.plist in Resources */ = {isa = PBXBuildFile; fileRef = E18488CE1FC2821600377A5E /* gn_distribution.plist */; };
+		E18488D21FC2821600377A5E /* gn_manualRegisnDis.sh in Resources */ = {isa = PBXBuildFile; fileRef = E18488CF1FC2821600377A5E /* gn_manualRegisnDis.sh */; };
+		E18488D31FC2821600377A5E /* gn_resignDis.sh in Resources */ = {isa = PBXBuildFile; fileRef = E18488D01FC2821600377A5E /* gn_resignDis.sh */; };
 		E19C44171D5C34600029C01F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C44161D5C34600029C01F /* AppDelegate.m */; };
 		E19C441A1D5C34600029C01F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C44191D5C34600029C01F /* main.m */; };
 		E19C441C1D5C34600029C01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19C441B1D5C34600029C01F /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 		E1815ED51FBD7E8D00C1C328 /* GN_HelloworldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_HelloworldViewController.m; sourceTree = "<group>"; };
 		E1815ED61FBD7E8D00C1C328 /* GN_HelloworldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GN_HelloworldViewController.xib; sourceTree = "<group>"; };
 		E1815EE81FBD8CE700C1C328 /* gn_tmpShell.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_tmpShell.sh; sourceTree = "<group>"; };
+		E18488CE1FC2821600377A5E /* gn_distribution.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gn_distribution.plist; sourceTree = "<group>"; };
+		E18488CF1FC2821600377A5E /* gn_manualRegisnDis.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_manualRegisnDis.sh; sourceTree = "<group>"; };
+		E18488D01FC2821600377A5E /* gn_resignDis.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gn_resignDis.sh; sourceTree = "<group>"; };
 		E19C44121D5C34600029C01F /* GNReisign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNReisign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19C44151D5C34600029C01F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E19C44161D5C34600029C01F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E1815EC51FBD7E8C00C1C328 /* GN_Dev */,
+				E18488CD1FC2821600377A5E /* GN_Dis */,
 				E1815EC91FBD7E8C00C1C328 /* GN_Function */,
 				E1815ECF1FBD7E8C00C1C328 /* GN_InHouse */,
 			);
@@ -151,6 +158,16 @@
 				E1815ED61FBD7E8D00C1C328 /* GN_HelloworldViewController.xib */,
 			);
 			path = GN_UI;
+			sourceTree = "<group>";
+		};
+		E18488CD1FC2821600377A5E /* GN_Dis */ = {
+			isa = PBXGroup;
+			children = (
+				E18488CE1FC2821600377A5E /* gn_distribution.plist */,
+				E18488CF1FC2821600377A5E /* gn_manualRegisnDis.sh */,
+				E18488D01FC2821600377A5E /* gn_resignDis.sh */,
+			);
+			path = GN_Dis;
 			sourceTree = "<group>";
 		};
 		E19C44091D5C34600029C01F = {
@@ -248,9 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18488D31FC2821600377A5E /* gn_resignDis.sh in Resources */,
 				E19C441C1D5C34600029C01F /* Assets.xcassets in Resources */,
 				E1815EDB1FBD7E8D00C1C328 /* gn_development.plist in Resources */,
 				E1815EE11FBD7E8D00C1C328 /* gn_importP12.sh in Resources */,
+				E18488D11FC2821600377A5E /* gn_distribution.plist in Resources */,
+				E18488D21FC2821600377A5E /* gn_manualRegisnDis.sh in Resources */,
 				E1815EDD1FBD7E8D00C1C328 /* gn_resignDev.sh in Resources */,
 				E19C441F1D5C34600029C01F /* MainMenu.xib in Resources */,
 				E1815EE21FBD7E8D00C1C328 /* gn_viewInfoPlist.sh in Resources */,

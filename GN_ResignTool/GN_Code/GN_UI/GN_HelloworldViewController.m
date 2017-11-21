@@ -140,7 +140,12 @@
     NSString *result = @"";
     NSString *shellPath = [GN_Data getShellPath:[[NSBundle mainBundle] resourcePath]];
     NSMutableString *entitlements = [NSMutableString stringWithString:shellPath];
-    [entitlements appendFormat:@"/gn_development.plist"];
+    if ([GN_Data shared].isDevP12 ) {
+        [entitlements appendFormat:@"/gn_development.plist"];
+    } else {
+        [entitlements appendFormat:@"/gn_distribution.plist"];
+
+    }
     
     NSString *cmd = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@ %@",
                      [GN_Data shared].gnIpaPath,
@@ -173,6 +178,28 @@
                      [GN_Data shared].gnBundleId,
                      [GN_Data shared].gnTeamId];
     result = [GN_Data shellName:@"gn_manualRegisnDev.sh" cmd:cmd inTerminal:YES];
+    //    NSLog(@"result=%@", result);
+    //    [AppDelegate updateData];
+}
+
+- (IBAction)manualReignDis:(id)sender
+{
+    //    [AppDelegate updateData];
+    
+    NSString *result = @"";
+    NSString *shellPath = [GN_Data getShellPath:[[NSBundle mainBundle] resourcePath]];
+    NSMutableString *entitlements = [NSMutableString stringWithString:shellPath];
+    [entitlements appendFormat:@"/gn_distribution.plist"];
+    
+    NSString *cmd = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@ %@",
+                     [GN_Data shared].gnIpaPath,
+                     [GN_Data shared].gnMobileProvisionPath,
+                     [GN_Data shared].gnP12Path,
+                     [GN_Data shared].gnP12Password,
+                     entitlements,
+                     [GN_Data shared].gnBundleId,
+                     [GN_Data shared].gnTeamId];
+    result = [GN_Data shellName:@"gn_manualRegisnDis.sh" cmd:cmd inTerminal:YES];
     //    NSLog(@"result=%@", result);
     //    [AppDelegate updateData];
 }

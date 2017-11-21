@@ -37,6 +37,12 @@ plutil -replace CFBundleIdentifier -string "$6" $tInfoplist
 #替换teamId
 plutil -replace application-identifier -string "$7"".""$6" "$5"
 #替换com.apple.developer.team-identifier
+#plutil -replace "team-identifier" -string "$7" "$5"
+#sed -i "" 's/'team-identifier'/'com.apple.developer.team-identifier'/g' "$5"
+#替换keychain-access-groups
+plutil -remove "keychain-access-groups".0 "$5"
+plutil -replace "keychain-access-groups".0 -string "$7"".""$6" "$5"
+#替换com.apple.developer.team-identifier
 #修改debug模式 输出日志
 plutil -replace Ourpalm_Debugmodel -bool "Yes" $tInfoplist
 #plutil -replace com.apple.developer.team-identifier -string "$7" "$5"
